@@ -9,4 +9,5 @@ month = int(sys.argv[1])
 df = py.DataFrame({"day":[1,2], "burgers sold":[5,10]})
 df['month'] = month
 
+print(df.head())
 df.to_parquet(f"output_{month}.parquet")
